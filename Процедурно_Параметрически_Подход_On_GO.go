@@ -110,7 +110,10 @@ func Create_shape_circl(r float64) *Shape {
 // Может отсутствовать.
 func Out(fp *Shape) string{
 
-	listPoint := []func() string{OutRectangle,OutTriangle,OutCircl}
+	listPoint := []func() string {
+		OutRectangle,
+		OutTriangle,
+		OutCircl}
 	ans := listPoint[fp.k]();
 	return ans
 }
@@ -121,7 +124,10 @@ func Out(fp *Shape) string{
 // Может отсутствовать.
 func Square(item *Shape) {
 
-	listPoint := []func(item *Shape) float64{square_rectangle_of_shape,square_triangle_of_shape,square_circl_of_shape}
+	listPoint := []func(item *Shape) float64 {
+		square_rectangle_of_shape,
+		square_triangle_of_shape,
+		square_circl_of_shape}
 
 	ans := listPoint[item.k](item)
 	name := Out(item)
@@ -135,7 +141,10 @@ func Square(item *Shape) {
 // Может отсутствовать.
 func Perimeter(item *Shape) {
 
-	listPoint := []func(item *Shape) float64{perimeter_rectangle_of_shape,perimeter_triangle_of_shape,perimeter_circl_of_shape}
+	listPoint := []func(item *Shape) float64 {
+		perimeter_rectangle_of_shape,
+		perimeter_triangle_of_shape,
+		perimeter_circl_of_shape}
 
 	ans := listPoint[item.k](item)
 	name := Out(item)
