@@ -10,9 +10,9 @@ import (
 // значения локальных ключей для каждой из фигур
 type key int
 const(
-     RECTANGLE key = 0
-     TRIANGLE      = 1
-	 CIRCL 		   = 2
+	RECTANGLE key = 0
+	TRIANGLE      = 1
+	CIRCL 		  = 2
 )
 //------------------------------------------------------------------
 
